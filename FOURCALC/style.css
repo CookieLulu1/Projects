@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+} */
+body {
+    align-items: center;
+    background:mistyrose;
+}
+
+.display {
+    align-items: left;
+    font-size: 30px;
+    height: 50px;
+    width: px;
+    padding-left: 10%;
+    background-color: #fff0ee;
+    font-family: 'Times New Roman', Times, serif;
+}
+.calc-row {
+    padding-left: 10%;
+}
+.calc-button {
+    width: 80px;
+    height: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8c0ba;
+    border-width: .5px;
+    border-radius: 5%;
+}
