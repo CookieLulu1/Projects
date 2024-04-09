@@ -16,11 +16,3 @@ function calculate() {
         document.getElementById('displayInput').innerHTML = eval(buffer);
 }
 
-function backspace() {
-
-}
-
-function undo() {
-
-}
-
