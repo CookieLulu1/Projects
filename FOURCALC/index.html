@@ -11,8 +11,7 @@
 <body>
     <div class = "wrapper">
         <div class = "divider1"></div>
-        <section class = display>
-            0
+        <section input id = display readonly class = display>
         </section>
         <section class = "buttons">
             <div class = "calc-row">
@@ -25,8 +24,8 @@
                 <button class = "calc-button-grey">
                     clear
                 </button>
-                <button class = "calc-button-red">
-                    <i class="material-icons" style="font-size:23px;">&#xe14a;</i>
+                <button onclick="displayThis('+')" class = "calc-button-red">
+                    &plus;
                 </button>
             </div>
             <div class = "calc-row">
