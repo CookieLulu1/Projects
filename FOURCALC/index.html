@@ -6,22 +6,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Calculator</title>
 </head>
+
 <body>
+    <!-- This image is for if you want your background image to be the rock: -->
+    <!-- <style>
+        body {
+          background-image: url('https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681-1024x1024.jpg');
+        }
+        </style> -->
     <div class = "wrapper">
         <div class = "divider1"></div>
-        <section input id = display readonly class = display>
+        <section input id="displayInput" readonly class = display text="dddd">
         </section>
         <section class = "buttons">
             <div class = "calc-row">
-                <button class = "calc-button-grey">
-                    &larrhk;
+                <button onclick="displayThis('(')" class = "calc-button-grey">
+                    &lpar;
                 </button>
-                <button class = "calc-button-grey">
-                    &rarrhk;
+                <button onclick="displayThis(')')" class = "calc-button-grey">
+                    &rpar;
                 </button>
-                <button class = "calc-button-grey">
+                <button onclick="clear1()" class = "calc-button-grey">
                     clear
                 </button>
                 <button onclick="displayThis('+')" class = "calc-button-red">
@@ -29,61 +37,63 @@
                 </button>
             </div>
             <div class = "calc-row">
-                <button class = "calc-button">
-                    &lpar;
+                <button onclick="displayThis('7')" class = "calc-button">
+                    7
                 </button>
-                <button class = "calc-button">
-                    &rpar;
+                <button onclick="displayThis('8')" class = "calc-button">
+                    8
                 </button>
-                <button class = "calc-button">
-                    &radic;
+                <button onclick="displayThis('9')" class = "calc-button">
+                    9
                 </button>
-                <button class = "calc-button-red"">
+                <button onclick="displayThis('/')" class = "calc-button-red"">
                     &div;
                 </button>
             </div>
             <div class = "calc-row">
-                <button class = "calc-button">
-                    7
+                <button onclick="displayThis('4')" class = "calc-button">
+                    4
                 </button>
-                <button class = "calc-button">
-                    8
+                <button onclick="displayThis('5')" class = "calc-button">
+                    5
                 </button>
-                <button class = "calc-button">
-                    9
+                <button onclick="displayThis('6')" class = "calc-button">
+                    6
                 </button>
-                <button class = "calc-button-red">
+                <button onclick="displayThis('*')" class = "calc-button-red">
                     &times;
                 </button>
             </div>
             <div class = "calc-row">
-                <button class = "calc-button">
-                    4
+                <button onclick="displayThis('1')" class = "calc-button">
+                    1
                 </button>
-                <button class = "calc-button">
-                    5
+                <button onclick="displayThis('2')" class = "calc-button">
+                    2
                 </button>
-                <button class = "calc-button">
-                    6
+                <button onclick="displayThis('3')" class = "calc-button">
+                    3
                 </button>
-                <button class = "calc-button-red">
+                <button onclick="displayThis('-')" class = "calc-button-red">
                     &minus;
                 </button>
             </div>
             <div class = "calc-row">
-                <button class = "calc-button">
+                <button onclick="displayThis('0')" class = "calc-button">
                     0
                 </button>
-                <button class = "calc-button">
+                <button onclick="displayThis('.')" class = "calc-button">
                     &period;
                 </button>
-                <button class = "calc-button">
+                <button onclick="displayThis('um idk')"class = "calc-button">
                     ans
                 </button>
-                <button class = "calc-button-red">
+                <button onclick="calculate()" class = "calc-button-red">
                     &equals;
                 </button>
             </div>
+            <!-- this image is for if you want the rock underneath your calculator: -->
+            <!-- <img src="https://memes.co.in/memes/update/uploads/2021/12/InShot_20211209_222013681-1024x1024.jpg" alt="Italian Trulli"> -->
         </section>
     </div>
 

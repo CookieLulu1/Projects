@@ -2,19 +2,18 @@ displayed = "";
 buffer = "";
 const display = document.getElementById("display");
 function displayThis(input){
-    input;
+    document.getElementById('displayInput').innerHTML += input;
+    buffer = document.getElementById('displayInput').innerHTML;
 }
 
-function clear() {
-    var display = document.getElementById("display");
-
-    displayed = "";
-    storedNum = "";
-    display.value = displayed;
+function clear1(){
+    document.getElementById('displayInput').innerHTML = "";
+    buffer = "";
 }
 
 function calculate() {
-
+    
+        document.getElementById('displayInput').innerHTML = eval(buffer);
 }
 
 function backspace() {
