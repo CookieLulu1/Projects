@@ -21,7 +21,7 @@ I debated making the buttons round, doing different themes, etc. However, I did 
 - [x] Create an eye-pleasing design
 - [x] Decide where to put each element (Numbers, Operators, Xtra)
 
-## PLAN HTML -> JS
+### PLAN HTML -> JS
 > [!NOTE]
 > I messed up on my JS a lot and had to go back and add things very often (unfortunately). To save time, next time I will create my HTML code with JS in mind. 
 
@@ -34,7 +34,7 @@ In my HTML code, I used a few different elements and tags to give different butt
 
 ```
 
-I decided to add a function within my JS to take the exact value of each button (basically the str or int or character that each button represents). What it does, is essentially takes the character specified within the HTML and stores it within a variable. This is also used to create the display. 
+I decided to add a function within my JS to take the exact value of each button (basically the str or int or character that each button represents). What it does is take the character specified within the HTML and store it within a variable. This is also used to create the display. 
 
 I added a function within each button that will essentially store each input within a buffer and calculate the product of the combination of symbols. For my JavaScript, my starting idea was to program out each key as a different input and program each operator to do something different to manually calculate the result. However, my Dad pointed out I could just use a built-in function (eval) to calculate the result:
 
@@ -46,7 +46,7 @@ function calculate() {
 ```
 - [x] Decide how to link JS and HTML
 
-## WRITING HTML AND CSS
+### WRITING HTML AND CSS
 In my calculator, there are 3 categories of things I need (and 3 subcategories in the second category). I need a display, buttons, and a background. For the display, the code was very simple. 
 
 ```
@@ -65,16 +65,16 @@ After, I started the actual buttons. Each one was tagged as a button, with a few
                     &lpar;
                 </button>
 ```
-I did this for each button in every row and column, using the class to be able to conveniently style it in style.css. Initially, when I created the layout, I hadn't thought to create different colored buttons for different types of input (such as numbers vs operators), but after, I just tweaked it to specify in each button I wanted to turn it into a different color and color it manually in css rather than using inline styling. This made my code much neater and easy to read. 
+I did this for each button in every row and column, using the class to be able to conveniently style it in style.css. Initially, when I created the layout, I hadn't thought to create different colored buttons for different types of input (such as numbers vs operators), but after, I just tweaked it to specify in each button I wanted to turn into a different color and color it manually in CSS rather than using inline styling. This made my code much neater and easy to read. 
 
 - [x] Create HTML
 - [x] Create CSS
 - [x] Create JavaScript code to implement
 
-I simplifed this part of my code as much as I could, and after writing all the code, it was time to debug. 
+I simplified this part of my code as much as I could, and after writing all the code, it was time to debug. 
 
-## DEBUGGING
-- Problem: clear func not working.
+### DEBUGGING
+- Problem: clear function not working.
     - Solution: clear is already an existing function within JS! Changed the name to clear1.
 - Problem: ^ button not working.
     - Solution: Changed input to ** instead of ^, improper for JS. 
@@ -84,7 +84,7 @@ I simplifed this part of my code as much as I could, and after writing all the c
     - Solution: (this took me an unironically long amount of time to figure out) Change margin-left and margin-right, and change the padding and margin of each row.
 - [x] Debug
 
-Final product:
+##Final product:
 ![Final Product Image](https://github.com/CookieLulu1/Projects/assets/155854627/ddc55786-1a0c-44b9-ac73-6ce7cb80c476)
 
 
